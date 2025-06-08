@@ -1,0 +1,56 @@
+{
+  "name": "use-async-data",
+  "version": "1.0.0",
+  "description": "A powerful React Hook for managing asynchronous data, tackling race conditions, de-duplication, and global state.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "npm run build -- --watch",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "async",
+    "data",
+    "fetch",
+    "global state",
+    "cache",
+    "deduplication",
+    "race condition",
+    "typescript"
+  ],
+  "author": {
+    "name": "Karan Raina",
+    "email": "karanraina1996@gmail.com",
+    "url": "https://twitter.com/karankraina"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "babel-jest": "^30.0.0-beta.3",
+    "jest": "^29.7.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
